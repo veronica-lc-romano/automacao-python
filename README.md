@@ -1,11 +1,10 @@
 # Conteudo das aulas do Lira da HashTag Treinamentos
+ Todos os sistemas começas com o passo a passo, para facilitar a construção dos passos da automação.
 
 ## Aula 1 - Automação de tarefas e bots
 
  Aula focada em automação, criando bot com pyautogui.
  O Bot realiza a tarefa repetitiva de cadastrar produtos na base de uma empresa.
-
- Todos os sistemas começas com o passo a passo, para facilitar a construção dos passos da automação.
 
  Passo 1: Entrar no sistema da empresa
  Passo 2: Fazer Login
@@ -13,9 +12,8 @@
  Passo 4: Cadastrar 1 produto
  Passo 5: Repetir o paso 4 até o fim da lista
 
-## Aula 2 - 
-
- Todos os sistemas começas com o passo a passo, para facilitar a construção dos passos da automação.
+## Aula 2 - Análise de dados
+ Aula para entender como manipular, tratar e corrigir problemas em dataframes e griar gráficos
 
  Passo 1: 
  Passo 2: 
@@ -23,8 +21,7 @@
  Passo 4: 
  Passo 5: 
 
-## Aula 3 - 
- Todos os sistemas começas com o passo a passo, para facilitar a construção dos passos da automação.
+## Aula 3 -
 
  Passo 1: 
  Passo 2: 
@@ -33,7 +30,6 @@
  Passo 5: 
 
 ## Aula 4 - 
- Todos os sistemas começas com o passo a passo, para facilitar a construção dos passos da automação.
 
  Passo 1: 
  Passo 2: 
