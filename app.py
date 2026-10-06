@@ -10,29 +10,37 @@ if not "lista_mensagens" in st.session_state:
     st.session_state["lista_mensagens"] = []
 #Input do chat em campo de mensagem
 texto_usuario = st.chat_input("Pergunte qualquer coisa")
-    # Conectar a API da openAI
+
+# Passo 2: Conectar a API
+
 Modelo_ia = OpenAI(api_key="[YOUR-GOOGLEAI-API-KEY]",base_url="https://generativelanguage.googleapis.com/v1beta/openai")
-#Para cada mensagem enviada pelo usuário:
-    #Loop para exibir as mensagens na tela
+
+# Passo 3: Lógica do Chat
+
+    #Para cada mensagem enviada pelo usuário:
+        #Loop para exibir as mensagens na tela
 for mensagem in st.session_state["lista_mensagens"]:
     role = mensagem["role"]
     content = mensagem["content"]
     st.chat_message(role).write(content)
-    # Mostrar a mensagem que o usuário enviou como "user"
+        # Mostrar a mensagem que o usuário enviou como "user"
 if texto_usuario:
     print(texto_usuario)
     st.chat_message("user").write(texto_usuario)
+
+# Passo 4: Definir Role e Content
     mensagem_usuario = {"role": "user", "content": texto_usuario}
     #Armazenar na lista mensagem
     st.session_state["lista_mensagens"].append(mensagem_usuario)
-    #ia respondeu
+    #resposta da IA
     resposta_ia = Modelo_ia.chat.completions.create(messages=st.session_state["lista_mensagens"], model="gemini-3.1-flash-lite")
     print(resposta_ia)
     texto_resposta_ia = resposta_ia.choices[0].message.content
 
     st.chat_message("assistant").write(texto_resposta_ia)
     mensagem_ia = {"role": "assistant", "content": texto_resposta_ia}
-    #Armazenar na lista mensagem
+# Passo 5: Manter sessão armazenada
+
     st.session_state["lista_mensagens"].append(mensagem_ia)
 
 print(st.session_state["lista_mensagens"])
@@ -42,7 +50,7 @@ print(st.session_state["lista_mensagens"])
     # rodar com o comando streamlit run app.py
     # para interomper, ctrl+c
 
-#Usar a IA da OpenAI
+#Usar a IA compatível com OpenAI
     #gerar uma chave no google AI Studio e colar no lugar de [YOUR-GOOGLEAI-API-KEY]
     # o model usado é "gemini-3.1-flash-lite" mas pode estar indisponível, se esse for o caso, verificar models disponíveis em: https://ai.google.dev/gemini-api/docs/openai?hl=pt-br
 
