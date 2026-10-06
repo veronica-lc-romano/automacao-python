@@ -15,11 +15,11 @@
 ## Aula 2 - Análise de dados
  Aula para entender como manipular, tratar e corrigir problemas em dataframes e griar gráficos
 
- Passo 1: 
- Passo 2: 
- Passo 3: 
- Passo 4: 
- Passo 5: 
+ Passo 1: Importar a tabela
+ Passo 2: Visualizar a tabela
+ Passo 3: Tirar da tabela todos os dados não utilizados com informações que não ajudam
+ Passo 4: Visualizando e analisando e dos cancelamentos
+ Passo 5: Analisando como as colunas impactam no cancelamento
 
 ## Aula 3 -
 
