@@ -13,7 +13,6 @@
 * Passo 4: Cadastrar 1 produto
 * Passo 5: Repetir o paso 4 até o fim da lista
 
-
 ## Aula 2 - Análise de dados
 
  Aula para entender como manipular, tratar e corrigir problemas em dataframes e griar gráficos
@@ -24,13 +23,13 @@
 * Passo 4: Visualizando e analisando e dos cancelamentos
 * Passo 5: Analisando como as colunas impactam no cancelamento
 
-## Aula 3 -
+## Aula 3 - Criando um Chatbot com inteligencia artificial
 
-* Passo 1: 
-* Passo 2: 
-* Passo 3: 
-* Passo 4: 
-* Passo 5: 
+* Passo 1: Definindo o funcionamento do chat
+* Passo 2: Conectar a API
+* Passo 3: Lógica do Chat
+* Passo 4: Definir Role e Content
+* Passo 5: Manter sessão armazenada
 
 ## Aula 4 -
 
