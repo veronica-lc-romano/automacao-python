@@ -37,13 +37,12 @@ if texto_usuario:
 
 print(st.session_state["lista_mensagens"])
 
-        #Resposta é simulada e criada
-    # Exibir a resposta na tela como "assistant"
-        #Armazenar mensagem
 
 #Usar o framework Streamlit para fazer o front e backend com Python
-
-#Usar a IA da OpenAI
     # rodar com o comando streamlit run app.py
     # para interomper, ctrl+c
+
+#Usar a IA da OpenAI
+    #gerar uma chave no google AI Studio e colar no lugar de [YOUR-GOOGLEAI-API-KEY]
+    # o model usado é "gemini-3.1-flash-lite" mas pode estar indisponível, se esse for o caso, verificar models disponíveis em: https://ai.google.dev/gemini-api/docs/openai?hl=pt-br
 
