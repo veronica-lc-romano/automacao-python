@@ -26,7 +26,17 @@ if botao:
     tabela.to_csv("vendas.csv", index=False)
     st.success("Venda Cadastrada com Sucesso!")
 # Passo 4: Mostrar a base de dados na tela
+st.write("## Vendas Cadastradas:")
+st.dataframe(tabela)
 # Passo 5: Criar o dashboard com os gráficos
+st.write("## DASHBOARD")
+soma = tabela["valor"].sum()
+st.metric("Faturamento total: ", f"R${soma}")
+grafico = px.bar(tabela, x="vendedor", y="valor", color="produto")
+st.plotly_chart(grafico)
+
+grafico2 = px.pie(tabela, names="produto", values="valor")
+st.plotly_chart(grafico2)
 
 
 
